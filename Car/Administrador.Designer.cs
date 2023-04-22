@@ -452,6 +452,7 @@ namespace Car
             this.btnRegistroContrato.TabIndex = 39;
             this.btnRegistroContrato.Text = "Registro de Contrato";
             this.btnRegistroContrato.UseVisualStyleBackColor = false;
+            this.btnRegistroContrato.Click += new System.EventHandler(this.btnRegistroContrato_Click);
             // 
             // btnRegistroCliente
             // 
@@ -628,6 +629,7 @@ namespace Car
             this.btnListContratos.TabIndex = 45;
             this.btnListContratos.Text = "Listado de Contratos";
             this.btnListContratos.UseVisualStyleBackColor = false;
+            this.btnListContratos.Click += new System.EventHandler(this.btnListContratos_Click);
             // 
             // btnListReservas
             // 

@@ -265,5 +265,18 @@ namespace Car
             AutoresApp autoresA = new AutoresApp();
             autoresA.Show();
         }
+
+        private void btnRegistroContrato_Click(object sender, EventArgs e)
+        {
+            RegistroContrato contra = new RegistroContrato();
+            contra.Show();
+            this.Close();
+        }
+
+        private void btnListContratos_Click(object sender, EventArgs e)
+        {
+            ReporteContrato repo = new ReporteContrato();
+            repo.Show();
+        }
     }
 }

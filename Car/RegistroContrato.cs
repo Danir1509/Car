@@ -124,7 +124,7 @@ namespace Car
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            ContratoDetalle mostrar = new ContratoDetalle();
+            Administrador mostrar = new Administrador("nombre");
             mostrar.Show();
             this.Close();
         }

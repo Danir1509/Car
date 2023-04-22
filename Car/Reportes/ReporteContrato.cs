@@ -19,8 +19,12 @@ namespace Car.Reportes
 
         private void ReporteContrato_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'yalexrentaAlquileres.alquileres' Puede moverla o quitarla según sea necesario.
+            this.alquileresTableAdapter1.Fill(this.yalexrentaAlquileres.alquileres);
+            // TODO: esta línea de código carga datos en la tabla 'yalexrentaFinal.contratos' Puede moverla o quitarla según sea necesario.
+            this.contratosTableAdapter1.Fill(this.yalexrentaFinal.contratos);
             // TODO: esta línea de código carga datos en la tabla 'yalexrentaContratos.alquileres' Puede moverla o quitarla según sea necesario.
-            this.alquileresTableAdapter.Fill(this.yalexrentaContratos.alquileres);
+            //this.alquileresTableAdapter.Fill(this.yalexrentaContratos.alquileres);
             // TODO: esta línea de código carga datos en la tabla 'yalexrentaContratos.vehiculo' Puede moverla o quitarla según sea necesario.
             this.vehiculoTableAdapter.Fill(this.yalexrentaContratos.vehiculo);
             // TODO: esta línea de código carga datos en la tabla 'yalexrentaContratos.clientes' Puede moverla o quitarla según sea necesario.

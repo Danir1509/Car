@@ -767,6 +767,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1911,6 +1912,13 @@
       </ConnectionProperties>
       <rd:DataSourceID>3244c438-c93e-4d8e-af53-6cda347ee230</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="yalexrentaFinal">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>6e1515fa-17b9-48bb-908a-4fdd06a2e49f</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="Contratos">
@@ -2099,21 +2107,13 @@
     </DataSet>
     <DataSet Name="Alquileres">
       <Query>
-        <DataSourceName>yalexrentaContratos</DataSourceName>
+        <DataSourceName>yalexrentaFinal</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
         <Field Name="id_alquiler">
           <DataField>id_alquiler</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="inicio_alquiler">
-          <DataField>inicio_alquiler</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="finalizacion_alquiler">
-          <DataField>finalizacion_alquiler</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="id_cliente">
           <DataField>id_cliente</DataField>
@@ -2127,18 +2127,22 @@
           <DataField>estado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="condicion_vehiculo">
-          <DataField>condicion_vehiculo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="id_vehiculo">
           <DataField>id_vehiculo</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="inicio_alquiler">
+          <DataField>inicio_alquiler</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="finalizacion_alquiler">
+          <DataField>finalizacion_alquiler</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>yalexrentaContratos</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\50360\source\repos\Car\Car\yalexrentaContratos.xsd</rd:SchemaPath>
+        <rd:DataSetName>yalexrentaAlquileres</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\50360\Documents\Repositorio\Car\Car\yalexrentaAlquileres.xsd</rd:SchemaPath>
         <rd:TableName>alquileres</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

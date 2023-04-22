@@ -275,6 +275,11 @@
     <Compile Include="Vista_registro_cliente_empleado.Designer.cs">
       <DependentUpon>Vista_registro_cliente_empleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="yalexrentaAlquileres.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yalexrentaAlquileres.xsd</DependentUpon>
+    </Compile>
     <Compile Include="yalexrentaContratos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -421,6 +426,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="yalexrentaAlquileres.xsc">
+      <DependentUpon>yalexrentaAlquileres.xsd</DependentUpon>
+    </None>
+    <None Include="yalexrentaAlquileres.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>yalexrentaAlquileres.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="yalexrentaAlquileres.xss">
+      <DependentUpon>yalexrentaAlquileres.xsd</DependentUpon>
+    </None>
     <None Include="yalexrentaContratos.xsc">
       <DependentUpon>yalexrentaContratos.xsd</DependentUpon>
     </None>
