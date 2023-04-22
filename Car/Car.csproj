@@ -92,7 +92,9 @@
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Alquileres.cs" />
+    <Compile Include="Clases\Cliente.cs" />
     <Compile Include="Clases\Contrato.cs" />
+    <Compile Include="Clases\RegistroAdmon.cs" />
     <Compile Include="Clases\Reserva.cs" />
     <Compile Include="Clases\vehiculo.cs" />
     <Compile Include="ConsulaAlquilerE.cs">
@@ -138,6 +140,12 @@
       <DependentUpon>Empleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +178,12 @@
     <Compile Include="RegistroVehiculo.Designer.cs">
       <DependentUpon>RegistroVehiculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registro_de_administrador_R.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_de_administrador_R.Designer.cs">
+      <DependentUpon>Registro_de_administrador_R.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReporteAlquiler.cs" />
     <Compile Include="Reportes\ReporteAlquileres.cs">
       <SubType>Form</SubType>
@@ -201,6 +215,30 @@
     </Compile>
     <Compile Include="VistaRegistro.Designer.cs">
       <DependentUpon>VistaRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista_administradores_empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_administradores_empleados.Designer.cs">
+      <DependentUpon>Vista_administradores_empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista_administrador_empleado_admon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_administrador_empleado_admon.Designer.cs">
+      <DependentUpon>Vista_administrador_empleado_admon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista_registro_cliente_admon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista_registro_cliente_admon.Designer.cs">
+      <DependentUpon>vista_registro_cliente_admon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista_registro_cliente_empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_registro_cliente_empleado.Designer.cs">
+      <DependentUpon>Vista_registro_cliente_empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="yalexrentaContratos.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -253,6 +291,9 @@
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +318,9 @@
     <EmbeddedResource Include="RegistroVehiculo.resx">
       <DependentUpon>RegistroVehiculo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registro_de_administrador_R.resx">
+      <DependentUpon>Registro_de_administrador_R.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteAlquileres.resx">
       <DependentUpon>ReporteAlquileres.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +338,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VistaRegistro.resx">
       <DependentUpon>VistaRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista_administradores_empleados.resx">
+      <DependentUpon>Vista_administradores_empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista_administrador_empleado_admon.resx">
+      <DependentUpon>Vista_administrador_empleado_admon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista_registro_cliente_admon.resx">
+      <DependentUpon>vista_registro_cliente_admon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista_registro_cliente_empleado.resx">
+      <DependentUpon>Vista_registro_cliente_empleado.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -381,3 +381,10 @@ C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.RegistroVehiculo.reso
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.VistaRegistro.resources
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.ConsultaVehiculoEmpleado.resources
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Reportes.ReporteVehiculo.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.csproj.AssemblyReference.cache
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Form1.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Registro_de_administrador_R.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Vista_administradores_empleados.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Vista_administrador_empleado_admon.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.vista_registro_cliente_admon.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Vista_registro_cliente_empleado.resources

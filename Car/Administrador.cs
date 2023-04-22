@@ -195,5 +195,36 @@ namespace Car
             VistaRegistro r = new VistaRegistro();
             r.Show();
         }
+
+        private void btnConsultaCliente_Click(object sender, EventArgs e)
+        {
+            vista_registro_cliente_admon vistacuatro = new vista_registro_cliente_admon();
+            vistacuatro.Show();
+        }
+
+        private void btnRegistroCliente_Click(object sender, EventArgs e)
+        {
+            Form1 vistauno = new Form1();
+            vistauno.Show();
+        }
+
+        private void btnRegistroAdministrador_Click(object sender, EventArgs e)
+        {
+            Registro_de_administrador_R vistados = new Registro_de_administrador_R();
+            vistados.Show();
+
+        }
+
+        private void btnConsultaEmple_Click(object sender, EventArgs e)
+        {
+            Vista_administrador_empleado_admon vistatres = new Vista_administrador_empleado_admon();
+            vistatres.Show();
+        }
+
+        private void btnRegistroEmpleado_Click(object sender, EventArgs e)
+        {
+            Registro_de_administrador_R vistados = new Registro_de_administrador_R();
+            vistados.Show();
+        }
     }
 }

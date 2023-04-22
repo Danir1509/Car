@@ -70,5 +70,17 @@ namespace Car
             emple.Show();
             this.Hide();
         }
+
+        private void btnConsultaCliente_Click(object sender, EventArgs e)
+        {
+            Vista_administradores_empleados vista1 = new Vista_administradores_empleados();
+            vista1.Show();
+        }
+
+        private void btnConsultaEmple_Click(object sender, EventArgs e)
+        {
+            Vista_administradores_empleados vistacinco = new Vista_administradores_empleados();
+            vistacinco.Show();
+        }
     }
 }

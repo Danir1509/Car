@@ -80,6 +80,7 @@ namespace Car
             this.btnMinim = new System.Windows.Forms.Button();
             this.btnMaxi = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnConsultaEmple = new System.Windows.Forms.Button();
             this.MenuAdminPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -464,6 +465,7 @@ namespace Car
             this.btnRegistroCliente.TabIndex = 38;
             this.btnRegistroCliente.Text = "Registro de Cliente";
             this.btnRegistroCliente.UseVisualStyleBackColor = false;
+            this.btnRegistroCliente.Click += new System.EventHandler(this.btnRegistroCliente_Click);
             // 
             // panelEmpleados
             // 
@@ -490,6 +492,7 @@ namespace Car
             this.btnRegistroAdministrador.TabIndex = 39;
             this.btnRegistroAdministrador.Text = "Registro de Administrador";
             this.btnRegistroAdministrador.UseVisualStyleBackColor = false;
+            this.btnRegistroAdministrador.Click += new System.EventHandler(this.btnRegistroAdministrador_Click);
             // 
             // btnRegistroEmpleado
             // 
@@ -504,6 +507,7 @@ namespace Car
             this.btnRegistroEmpleado.TabIndex = 38;
             this.btnRegistroEmpleado.Text = "Registro de Empleado";
             this.btnRegistroEmpleado.UseVisualStyleBackColor = false;
+            this.btnRegistroEmpleado.Click += new System.EventHandler(this.btnRegistroEmpleado_Click);
             // 
             // panelMantenimi
             // 
@@ -593,6 +597,7 @@ namespace Car
             this.btnConsultaCliente.TabIndex = 38;
             this.btnConsultaCliente.Text = "Consulta de Cliente";
             this.btnConsultaCliente.UseVisualStyleBackColor = false;
+            this.btnConsultaCliente.Click += new System.EventHandler(this.btnConsultaCliente_Click);
             // 
             // panelReportes
             // 
@@ -816,12 +821,28 @@ namespace Car
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnConsultaEmple
+            // 
+            this.btnConsultaEmple.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnConsultaEmple.FlatAppearance.BorderSize = 0;
+            this.btnConsultaEmple.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsultaEmple.Location = new System.Drawing.Point(955, 480);
+            this.btnConsultaEmple.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultaEmple.Name = "btnConsultaEmple";
+            this.btnConsultaEmple.Size = new System.Drawing.Size(241, 60);
+            this.btnConsultaEmple.TabIndex = 46;
+            this.btnConsultaEmple.Text = "Consulta de Empleados";
+            this.btnConsultaEmple.UseVisualStyleBackColor = false;
+            this.btnConsultaEmple.Click += new System.EventHandler(this.btnConsultaEmple_Click);
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1736, 686);
+            this.Controls.Add(this.btnConsultaEmple);
             this.Controls.Add(this.panelTituloAdmin);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.panelAcercaDe);
@@ -916,5 +937,6 @@ namespace Car
         private System.Windows.Forms.Button btnMinim;
         private System.Windows.Forms.Button btnMaxi;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnConsultaEmple;
     }
 }
