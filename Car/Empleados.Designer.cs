@@ -40,6 +40,7 @@ namespace Car
             this.btnListVehiculos = new System.Windows.Forms.Button();
             this.btnListCliente = new System.Windows.Forms.Button();
             this.panelMantenimi = new System.Windows.Forms.Panel();
+            this.btnConsultaEmple = new System.Windows.Forms.Button();
             this.btnConsultaVehiculos = new System.Windows.Forms.Button();
             this.btnConsultaContratos = new System.Windows.Forms.Button();
             this.btnConsultaReservas = new System.Windows.Forms.Button();
@@ -65,7 +66,6 @@ namespace Car
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnConsultaEmple = new System.Windows.Forms.Button();
             this.panelAcercaDe.SuspendLayout();
             this.panelReportes.SuspendLayout();
             this.panelMantenimi.SuspendLayout();
@@ -215,6 +215,7 @@ namespace Car
             // panelMantenimi
             // 
             this.panelMantenimi.BackColor = System.Drawing.Color.PaleGreen;
+            this.panelMantenimi.Controls.Add(this.btnConsultaEmple);
             this.panelMantenimi.Controls.Add(this.btnConsultaVehiculos);
             this.panelMantenimi.Controls.Add(this.btnConsultaContratos);
             this.panelMantenimi.Controls.Add(this.btnConsultaReservas);
@@ -223,9 +224,24 @@ namespace Car
             this.panelMantenimi.Location = new System.Drawing.Point(-1, 181);
             this.panelMantenimi.Margin = new System.Windows.Forms.Padding(4);
             this.panelMantenimi.Name = "panelMantenimi";
-            this.panelMantenimi.Size = new System.Drawing.Size(241, 294);
+            this.panelMantenimi.Size = new System.Drawing.Size(241, 351);
             this.panelMantenimi.TabIndex = 50;
             this.panelMantenimi.Visible = false;
+            // 
+            // btnConsultaEmple
+            // 
+            this.btnConsultaEmple.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnConsultaEmple.FlatAppearance.BorderSize = 0;
+            this.btnConsultaEmple.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsultaEmple.Location = new System.Drawing.Point(0, 288);
+            this.btnConsultaEmple.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultaEmple.Name = "btnConsultaEmple";
+            this.btnConsultaEmple.Size = new System.Drawing.Size(241, 60);
+            this.btnConsultaEmple.TabIndex = 46;
+            this.btnConsultaEmple.Text = "Consulta de Empleados";
+            this.btnConsultaEmple.UseVisualStyleBackColor = false;
+            this.btnConsultaEmple.Click += new System.EventHandler(this.btnConsultaEmple_Click);
             // 
             // btnConsultaVehiculos
             // 
@@ -328,7 +344,7 @@ namespace Car
             // 
             // MenuEmpleadoPanel
             // 
-            this.MenuEmpleadoPanel.BackColor = System.Drawing.Color.LimeGreen;
+            this.MenuEmpleadoPanel.BackColor = System.Drawing.Color.IndianRed;
             this.MenuEmpleadoPanel.Controls.Add(this.pictureBox7);
             this.MenuEmpleadoPanel.Controls.Add(this.btnAcercade);
             this.MenuEmpleadoPanel.Controls.Add(this.pictureBox6);
@@ -346,7 +362,7 @@ namespace Car
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.LimeGreen;
+            this.pictureBox7.BackColor = System.Drawing.Color.IndianRed;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(756, 12);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
@@ -358,7 +374,7 @@ namespace Car
             // 
             // btnAcercade
             // 
-            this.btnAcercade.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAcercade.BackColor = System.Drawing.Color.IndianRed;
             this.btnAcercade.FlatAppearance.BorderSize = 0;
             this.btnAcercade.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcercade.Image = ((System.Drawing.Image)(resources.GetObject("btnAcercade.Image")));
@@ -374,7 +390,7 @@ namespace Car
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.LimeGreen;
+            this.pictureBox6.BackColor = System.Drawing.Color.IndianRed;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(516, 12);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
@@ -386,7 +402,7 @@ namespace Car
             // 
             // btnReportes
             // 
-            this.btnReportes.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnReportes.BackColor = System.Drawing.Color.IndianRed;
             this.btnReportes.FlatAppearance.BorderSize = 0;
             this.btnReportes.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
@@ -414,7 +430,7 @@ namespace Car
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.LimeGreen;
+            this.pictureBox5.BackColor = System.Drawing.Color.IndianRed;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(276, 12);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
@@ -426,7 +442,7 @@ namespace Car
             // 
             // btnMantenimiento
             // 
-            this.btnMantenimiento.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnMantenimiento.BackColor = System.Drawing.Color.IndianRed;
             this.btnMantenimiento.FlatAppearance.BorderSize = 0;
             this.btnMantenimiento.Font = new System.Drawing.Font("Berlin Sans FB Demi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMantenimiento.Image = ((System.Drawing.Image)(resources.GetObject("btnMantenimiento.Image")));
@@ -573,29 +589,12 @@ namespace Car
             this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
             // 
-            // btnConsultaEmple
-            // 
-            this.btnConsultaEmple.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnConsultaEmple.FlatAppearance.BorderSize = 0;
-            this.btnConsultaEmple.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultaEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsultaEmple.Location = new System.Drawing.Point(-1, 472);
-            this.btnConsultaEmple.Margin = new System.Windows.Forms.Padding(4);
-            this.btnConsultaEmple.Name = "btnConsultaEmple";
-            this.btnConsultaEmple.Size = new System.Drawing.Size(241, 60);
-            this.btnConsultaEmple.TabIndex = 46;
-            this.btnConsultaEmple.Text = "Consulta de Empleados";
-            this.btnConsultaEmple.UseVisualStyleBackColor = false;
-            this.btnConsultaEmple.Click += new System.EventHandler(this.btnConsultaEmple_Click);
-            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1451, 599);
-            this.Controls.Add(this.btnConsultaEmple);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMensajeEmpleado);
             this.Controls.Add(this.panelTituloEmpleado);
@@ -604,6 +603,7 @@ namespace Car
             this.Controls.Add(this.panelMantenimi);
             this.Controls.Add(this.panelReserva);
             this.Controls.Add(this.MenuEmpleadoPanel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
