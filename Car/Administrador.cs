@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Car.Reportes;
 
 namespace Car
 {
@@ -225,6 +226,18 @@ namespace Car
         {
             Registro_de_administrador_R vistados = new Registro_de_administrador_R();
             vistados.Show();
+        }
+
+        private void btnListCliente_Click(object sender, EventArgs e)
+        {
+            ReporteClientes report = new ReporteClientes();
+            report.Show();
+        }
+
+        private void bntListaEmpleados_Click(object sender, EventArgs e)
+        {
+            ReporteEmpleados_Administradores vis = new ReporteEmpleados_Administradores();
+            vis.Show();
         }
     }
 }

@@ -41,6 +41,7 @@ namespace Car
             this.button1 = new System.Windows.Forms.Button();
             this.btnminimizar = new System.Windows.Forms.Button();
             this.btncerrar = new System.Windows.Forms.Button();
+            this.btngenerar = new System.Windows.Forms.Button();
             this.panelcontenido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgclientes)).BeginInit();
             this.panelvista2.SuspendLayout();
@@ -48,6 +49,7 @@ namespace Car
             // 
             // panelcontenido
             // 
+            this.panelcontenido.Controls.Add(this.btngenerar);
             this.panelcontenido.Controls.Add(this.lbltema);
             this.panelcontenido.Controls.Add(this.txtBuscador);
             this.panelcontenido.Controls.Add(this.dgclientes);
@@ -191,6 +193,21 @@ namespace Car
             this.btncerrar.UseVisualStyleBackColor = true;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
+            // btngenerar
+            // 
+            this.btngenerar.BackColor = System.Drawing.Color.Blue;
+            this.btngenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btngenerar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngenerar.ForeColor = System.Drawing.Color.White;
+            this.btngenerar.Location = new System.Drawing.Point(992, 186);
+            this.btngenerar.Margin = new System.Windows.Forms.Padding(4);
+            this.btngenerar.Name = "btngenerar";
+            this.btngenerar.Size = new System.Drawing.Size(100, 43);
+            this.btngenerar.TabIndex = 6;
+            this.btngenerar.Text = "Generar";
+            this.btngenerar.UseVisualStyleBackColor = false;
+            this.btngenerar.Click += new System.EventHandler(this.btngenerar_Click);
+            // 
             // vista_registro_cliente_admon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,5 +240,6 @@ namespace Car
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnminimizar;
         private System.Windows.Forms.Button btncerrar;
+        private System.Windows.Forms.Button btngenerar;
     }
 }

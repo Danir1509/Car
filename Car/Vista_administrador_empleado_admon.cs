@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Car.Clases;
+using Car.Reportes;
 namespace Car
 {
     public partial class Vista_administrador_empleado_admon : Form
@@ -115,7 +116,11 @@ namespace Car
 
         }
 
-      
+        private void btngenerar_Click(object sender, EventArgs e)
+        {
+            ReporteEmpleados_Administradores dos = new ReporteEmpleados_Administradores();
+            dos.Show();
+        }
     }
 }
 

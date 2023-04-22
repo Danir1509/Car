@@ -388,3 +388,5 @@ C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Vista_administradores
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Vista_administrador_empleado_admon.resources
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.vista_registro_cliente_admon.resources
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Vista_registro_cliente_empleado.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Reportes.ReporteClientes.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Reportes.ReporteEmpleados_Administradores.resources

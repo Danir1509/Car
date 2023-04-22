@@ -191,6 +191,12 @@
     <Compile Include="Reportes\ReporteAlquileres.Designer.cs">
       <DependentUpon>ReporteAlquileres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReporteClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteClientes.Designer.cs">
+      <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReporteContrato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,12 @@
     </Compile>
     <Compile Include="Reportes\ReporteContratoempleado.Designer.cs">
       <DependentUpon>ReporteContratoempleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteEmpleados_Administradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteEmpleados_Administradores.Designer.cs">
+      <DependentUpon>ReporteEmpleados_Administradores.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReporteVehiculo.cs">
       <SubType>Form</SubType>
@@ -324,6 +336,10 @@
     <EmbeddedResource Include="Reportes\ReporteAlquileres.resx">
       <DependentUpon>ReporteAlquileres.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteClientes.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteClientes.resx">
+      <DependentUpon>ReporteClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteContrato.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteContrato.resx">
       <DependentUpon>ReporteContrato.cs</DependentUpon>
@@ -331,6 +347,10 @@
     <EmbeddedResource Include="Reportes\ReporteContratoempleado.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteContratoempleado.resx">
       <DependentUpon>ReporteContratoempleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteEmpleados_Administradores.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteEmpleados_Administradores.resx">
+      <DependentUpon>ReporteEmpleados_Administradores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteVehiculo.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteVehiculo.resx">

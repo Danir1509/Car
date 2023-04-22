@@ -81,6 +81,7 @@ namespace Car
             this.btnMaxi = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnConsultaEmple = new System.Windows.Forms.Button();
+            this.bntListaEmpleados = new System.Windows.Forms.Button();
             this.MenuAdminPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -683,6 +684,7 @@ namespace Car
             this.btnListCliente.TabIndex = 38;
             this.btnListCliente.Text = "Listado de Clientes";
             this.btnListCliente.UseVisualStyleBackColor = false;
+            this.btnListCliente.Click += new System.EventHandler(this.btnListCliente_Click);
             // 
             // panelAcercaDe
             // 
@@ -827,7 +829,7 @@ namespace Car
             this.btnConsultaEmple.FlatAppearance.BorderSize = 0;
             this.btnConsultaEmple.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultaEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsultaEmple.Location = new System.Drawing.Point(955, 480);
+            this.btnConsultaEmple.Location = new System.Drawing.Point(955, 478);
             this.btnConsultaEmple.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultaEmple.Name = "btnConsultaEmple";
             this.btnConsultaEmple.Size = new System.Drawing.Size(241, 60);
@@ -836,12 +838,28 @@ namespace Car
             this.btnConsultaEmple.UseVisualStyleBackColor = false;
             this.btnConsultaEmple.Click += new System.EventHandler(this.btnConsultaEmple_Click);
             // 
+            // bntListaEmpleados
+            // 
+            this.bntListaEmpleados.BackColor = System.Drawing.Color.PaleGreen;
+            this.bntListaEmpleados.FlatAppearance.BorderSize = 0;
+            this.bntListaEmpleados.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntListaEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bntListaEmpleados.Location = new System.Drawing.Point(1195, 477);
+            this.bntListaEmpleados.Margin = new System.Windows.Forms.Padding(4);
+            this.bntListaEmpleados.Name = "bntListaEmpleados";
+            this.bntListaEmpleados.Size = new System.Drawing.Size(241, 60);
+            this.bntListaEmpleados.TabIndex = 46;
+            this.bntListaEmpleados.Text = "Listado de Empleados";
+            this.bntListaEmpleados.UseVisualStyleBackColor = false;
+            this.bntListaEmpleados.Click += new System.EventHandler(this.bntListaEmpleados_Click);
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1736, 686);
+            this.Controls.Add(this.bntListaEmpleados);
             this.Controls.Add(this.btnConsultaEmple);
             this.Controls.Add(this.panelTituloAdmin);
             this.Controls.Add(this.pictureBox9);
@@ -938,5 +956,6 @@ namespace Car
         private System.Windows.Forms.Button btnMaxi;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnConsultaEmple;
+        private System.Windows.Forms.Button bntListaEmpleados;
     }
 }

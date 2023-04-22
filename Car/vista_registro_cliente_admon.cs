@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Car.Clases;
+using Car.Reportes;
 namespace Car
 {
     public partial class vista_registro_cliente_admon : Form
@@ -153,7 +154,11 @@ namespace Car
 
         }
 
-    
+        private void btngenerar_Click(object sender, EventArgs e)
+        {
+            ReporteClientes reportee = new ReporteClientes();
+            reportee.Show();
+        }
     }
 }
 
