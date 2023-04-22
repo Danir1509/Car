@@ -377,3 +377,4 @@ C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.csproj.CoreCompileInp
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.csproj.CopyComplete
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.exe
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.pdb
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Reportes.ReporteAlquileres.resources
