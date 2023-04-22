@@ -150,6 +150,7 @@ namespace Car
             this.btnListContratos.TabIndex = 45;
             this.btnListContratos.Text = "Listado de Contratos";
             this.btnListContratos.UseVisualStyleBackColor = false;
+            this.btnListContratos.Click += new System.EventHandler(this.btnListContratos_Click);
             // 
             // btnListReservas
             // 
@@ -194,6 +195,7 @@ namespace Car
             this.btnListVehiculos.TabIndex = 43;
             this.btnListVehiculos.Text = "Listado de Vehiculos ";
             this.btnListVehiculos.UseVisualStyleBackColor = false;
+            this.btnListVehiculos.Click += new System.EventHandler(this.btnListVehiculos_Click);
             // 
             // btnListCliente
             // 
@@ -208,6 +210,7 @@ namespace Car
             this.btnListCliente.TabIndex = 38;
             this.btnListCliente.Text = "Listado de Clientes";
             this.btnListCliente.UseVisualStyleBackColor = false;
+            this.btnListCliente.Click += new System.EventHandler(this.btnListCliente_Click);
             // 
             // panelMantenimi
             // 
@@ -539,7 +542,7 @@ namespace Car
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Britannic Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(337, 501);
+            this.label2.Location = new System.Drawing.Point(181, 501);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(715, 50);

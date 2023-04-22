@@ -43,8 +43,7 @@ namespace Car
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Empleados emple = new Empleados("nombre");
-            emple.Show();
+            
             this.Close();
         }
 

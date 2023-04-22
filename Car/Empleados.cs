@@ -69,7 +69,7 @@ namespace Car
         {
             ContratoEmpleado emple = new ContratoEmpleado();
             emple.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnConsultaCliente_Click(object sender, EventArgs e)
@@ -118,6 +118,24 @@ namespace Car
         {
             AutoresApp autoresE = new AutoresApp();
             autoresE.Show();
+        }
+
+        private void btnListCliente_Click(object sender, EventArgs e)
+        {
+            ReporteClientes client = new ReporteClientes();
+            client.Show();
+        }
+
+        private void btnListVehiculos_Click(object sender, EventArgs e)
+        {
+            ReporteVehiculo vehi = new ReporteVehiculo();
+            vehi.Show();
+        }
+
+        private void btnListContratos_Click(object sender, EventArgs e)
+        {
+            ReporteContratoempleado emple = new ReporteContratoempleado();
+            emple.Show();
         }
     }
 }

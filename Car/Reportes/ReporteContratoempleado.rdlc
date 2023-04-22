@@ -125,7 +125,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -160,7 +159,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -186,7 +184,7 @@
         <DataSetName>Clientes</DataSetName>
         <Top>1.45063cm</Top>
         <Left>0.98637cm</Left>
-        <Height>2.32183cm</Height>
+        <Height>2.32184cm</Height>
         <Width>5.09878cm</Width>
         <Style>
           <Border>
@@ -237,7 +235,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -311,7 +308,7 @@
         <DataSetName>Vehiculos</DataSetName>
         <Top>1.45063cm</Top>
         <Left>6.08514cm</Left>
-        <Height>2.32183cm</Height>
+        <Height>2.32184cm</Height>
         <Width>2.48942cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
@@ -404,7 +401,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -429,7 +425,7 @@
         <DataSetName>Contrato</DataSetName>
         <Top>1.45063cm</Top>
         <Left>8.57456cm</Left>
-        <Height>2.32183cm</Height>
+        <Height>2.32184cm</Height>
         <Width>2.28128cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
@@ -481,7 +477,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -555,7 +550,7 @@
         <DataSetName>Alquileres</DataSetName>
         <Top>1.45063cm</Top>
         <Left>10.85584cm</Left>
-        <Height>2.32183cm</Height>
+        <Height>2.32184cm</Height>
         <Width>3.389cm</Width>
         <ZIndex>3</ZIndex>
         <Style>
@@ -921,7 +916,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -956,7 +950,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -991,7 +984,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1026,7 +1018,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1061,7 +1052,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1096,7 +1086,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1131,7 +1120,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -1166,7 +1154,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1250,7 +1237,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1598,14 +1584,6 @@
           <DataField>id_alquiler</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="inicio_alquiler">
-          <DataField>inicio_alquiler</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="finalizacion_alquiler">
-          <DataField>finalizacion_alquiler</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="id_cliente">
           <DataField>id_cliente</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
@@ -1618,18 +1596,22 @@
           <DataField>estado</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="condicion_vehiculo">
-          <DataField>condicion_vehiculo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="id_vehiculo">
           <DataField>id_vehiculo</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="inicio_alquiler">
+          <DataField>inicio_alquiler</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="finalizacion_alquiler">
+          <DataField>finalizacion_alquiler</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>yalexrentaContratos</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\50360\source\repos\Car\Car\yalexrentaContratos.xsd</rd:SchemaPath>
+        <rd:DataSetName>yalexrentaAlquileres</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\50360\Documents\Repositorio\Car\Car\yalexrentaAlquileres.xsd</rd:SchemaPath>
         <rd:TableName>alquileres</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
