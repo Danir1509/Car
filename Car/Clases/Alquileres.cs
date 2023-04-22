@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
+using Car.Clases;
 
 namespace Car.Clases
 {
@@ -22,6 +23,7 @@ namespace Car.Clases
         private int id_vehiculo;
         private string inicio_alquiler;
         private string finalizacion_alquiler;
+        internal int Id_reserva;
 
         public int Id_alquiler { get => id_alquiler; set => id_alquiler = value; }
         public int Id_cliente { get => id_cliente; set => id_cliente = value; }
@@ -90,7 +92,7 @@ namespace Car.Clases
         {
             DataTable tabla = new DataTable();
             comando.Connection = Conexion.Conectar();
-            comando.CommandText = "ListarAlquileres";
+            comando.CommandText = "ListaAlquileres";
             comando.CommandType = CommandType.StoredProcedure;
             leerfilas = comando.ExecuteReader();
             tabla.Load(leerfilas);
@@ -103,7 +105,7 @@ namespace Car.Clases
         {
 
             comando.Connection = Conexion.Conectar();
-            comando.CommandText = "InsertarAlquiler";
+            comando.CommandText = "InsertarAlquileres";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@id_cliente", Id_cliente);
             comando.Parameters.AddWithValue("@costoalquiler", costoalquiler);
@@ -129,7 +131,7 @@ namespace Car.Clases
         public void eliminarAlquiler()
         {
             comando.Connection = Conexion.Conectar();
-            comando.CommandText = "delete alquileres where id_alquiler=" + id_alquiler;
+            comando.CommandText = "delete alquileres where id_alquiler" + id_alquiler;
             comando.CommandType = CommandType.Text;
             comando.ExecuteNonQuery();
             Conexion.Conectar().Close();

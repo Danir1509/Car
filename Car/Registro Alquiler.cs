@@ -108,7 +108,7 @@ namespace Car
             {
                 try
                 {
-                    alquiler.Id_cliente = Convert.ToInt32(cbxCliente.SelectedValue);                    
+                    alquiler.Id_cliente = Convert.ToInt32(cbxCliente.SelectedValue);
                     alquiler.Id_vehiculo = Convert.ToInt32(cbxCVehiculo.SelectedValue);
                     alquiler.Costoalquiler = Convert.ToDecimal(txtCostoAlqui.Text);
                     alquiler.Estado = cbxEstadoAl.Text;
@@ -133,7 +133,7 @@ namespace Car
                     alquiler.Costoalquiler = Convert.ToDecimal(txtCostoAlqui.Text);
                     alquiler.Estado = cbxEstadoAl.Text;
                     alquiler.Inicio_alquiler = dtpFechaIniAlquiler.Text;
-                    alquiler.Finalizacion_alquiler = dtpFechaFinaliAlquiler.Text;        
+                    alquiler.Finalizacion_alquiler = dtpFechaFinaliAlquiler.Text;
                     alquiler.Id_alquiler = Convert.ToInt32(id_alquiler);
                     alquiler.editarAlquiler();
 

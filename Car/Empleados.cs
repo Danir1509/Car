@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Car.Reportes;
 
 namespace Car
 {
@@ -81,6 +82,30 @@ namespace Car
         {
             Vista_administradores_empleados vistacinco = new Vista_administradores_empleados();
             vistacinco.Show();
+        }
+
+        private void btnConsultaAlquiler_Click(object sender, EventArgs e)
+        {
+            ConsulaAlquilerE alquiler = new ConsulaAlquilerE();
+            alquiler.Show();
+        }
+
+        private void btnConsultaReservas_Click(object sender, EventArgs e)
+        {
+            ConsultarReservaE reserva = new ConsultarReservaE();
+            reserva.Show();
+        }
+
+        private void btnListAlquileres_Click(object sender, EventArgs e)
+        {
+            ReporteAlquileres ralqui = new ReporteAlquileres();
+            ralqui.Show();
+        }
+
+        private void btnListReservas_Click(object sender, EventArgs e)
+        {
+            ReporteReserva rreserva = new ReporteReserva();
+            rreserva.Show();
         }
     }
 }

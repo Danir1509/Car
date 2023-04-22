@@ -115,6 +115,12 @@
     <Compile Include="ConsultaReservas.Designer.cs">
       <DependentUpon>ConsultaReservas.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarReservaE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarReservaE.Designer.cs">
+      <DependentUpon>ConsultarReservaE.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaVehiculoEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,7 +190,6 @@
     <Compile Include="Registro_de_administrador_R.Designer.cs">
       <DependentUpon>Registro_de_administrador_R.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReporteAlquiler.cs" />
     <Compile Include="Reportes\ReporteAlquileres.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +219,12 @@
     </Compile>
     <Compile Include="Reportes\ReporteEmpleados_Administradores.Designer.cs">
       <DependentUpon>ReporteEmpleados_Administradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteReserva.Designer.cs">
+      <DependentUpon>ReporteReserva.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReporteVehiculo.cs">
       <SubType>Form</SubType>
@@ -285,11 +296,17 @@
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsulaAlquilerE.resx">
+      <DependentUpon>ConsulaAlquilerE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaAlquileres.resx">
       <DependentUpon>ConsultaAlquileres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaReservas.resx">
       <DependentUpon>ConsultaReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarReservaE.resx">
+      <DependentUpon>ConsultarReservaE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaVehiculoEmpleado.resx">
       <DependentUpon>ConsultaVehiculoEmpleado.cs</DependentUpon>
@@ -333,6 +350,7 @@
     <EmbeddedResource Include="Registro_de_administrador_R.resx">
       <DependentUpon>Registro_de_administrador_R.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteAlquileres.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteAlquileres.resx">
       <DependentUpon>ReporteAlquileres.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,6 +370,10 @@
     <EmbeddedResource Include="Reportes\ReporteEmpleados_Administradores.resx">
       <DependentUpon>ReporteEmpleados_Administradores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteReserva.resx">
+      <DependentUpon>ReporteReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteReservas.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteVehiculo.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteVehiculo.resx">
       <DependentUpon>ReporteVehiculo.cs</DependentUpon>

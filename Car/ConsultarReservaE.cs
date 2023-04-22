@@ -11,28 +11,28 @@ using Car.Clases;
 
 namespace Car
 {
-    public partial class ConsulaAlquilerE : Form
+    public partial class ConsultarReservaE : Form
     {
-        public ConsulaAlquilerE()
+        public ConsultarReservaE()
         {
             InitializeComponent();
         }
 
-        private void ConsulaAlquilerE_Load(object sender, EventArgs e)
+        private void ConsultarReservaE_Load(object sender, EventArgs e)
         {
-            ListarAlquileres();
+            ListarReservas();
         }
 
-        private void ListarAlquileres()
+        private void ListarReservas()
         {
-            Alquileres mostrar = new Alquileres();
-            dgvAlquiler.DataSource = mostrar.ListarAlquileres();
+            Reserva mostrar = new Reserva();
+            dgvReserva.DataSource = mostrar.ListarReservas();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-           Empleados emple = new Empleados("nombre");
+            Empleados emple = new Empleados("nombre");
             emple.Show();
         }
 
@@ -42,7 +42,7 @@ namespace Car
         }
         int posY = 0;
         int posX = 0;
-        private void panelTituloConsultaAlquileres_MouseMove(object sender, MouseEventArgs e)
+        private void panelTituloConsultaReservaE_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left)
             {

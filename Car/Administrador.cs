@@ -239,5 +239,17 @@ namespace Car
             ReporteEmpleados_Administradores vis = new ReporteEmpleados_Administradores();
             vis.Show();
         }
+
+        private void btnListAlquileres_Click(object sender, EventArgs e)
+        {
+            ReporteAlquileres ralqui = new ReporteAlquileres();
+            ralqui.Show();
+        }
+
+        private void btnListReservas_Click(object sender, EventArgs e)
+        {
+            ReporteReserva rreserva = new ReporteReserva();
+            rreserva.Show();
+        }
     }
 }

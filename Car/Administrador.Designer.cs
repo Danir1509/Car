@@ -642,6 +642,7 @@ namespace Car
             this.btnListReservas.TabIndex = 44;
             this.btnListReservas.Text = "Listado de Reservas";
             this.btnListReservas.UseVisualStyleBackColor = false;
+            this.btnListReservas.Click += new System.EventHandler(this.btnListReservas_Click);
             // 
             // btnListAlquileres
             // 
@@ -656,6 +657,7 @@ namespace Car
             this.btnListAlquileres.TabIndex = 39;
             this.btnListAlquileres.Text = "Listado de Alquileres";
             this.btnListAlquileres.UseVisualStyleBackColor = false;
+            this.btnListAlquileres.Click += new System.EventHandler(this.btnListAlquileres_Click);
             // 
             // btnListVehiculos
             // 

@@ -117,31 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="alquileresBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>175, 17</value>
-  </metadata>
-  <metadata name="clientesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>608, 17</value>
-  </metadata>
-  <metadata name="vehiculoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1013, 17</value>
-  </metadata>
-  <metadata name="contratosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>222, 60</value>
-  </metadata>
-  <metadata name="yalexrentaFinal.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="alquileresTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>395, 17</value>
-  </metadata>
-  <metadata name="clientesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>814, 17</value>
-  </metadata>
-  <metadata name="vehiculoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 60</value>
-  </metadata>
-  <metadata name="contratosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>441, 60</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        kgAAAJIB+bxJdAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACRSURBVDhPpZNb
+        CoAwEAMLev8TqB8+EPQi6qU0kQaK9rHiQKAtmykKdWBHOqTixghnW+TgpkFOZEYsEs5MCDu8+D7o/cGC
+        1EgKzg7Ia9YiSZZFTlIsi5jEXBahZEVGvzaVRXirROYyoUA3fxaEt7P4+fufhfCfZCWxsihKcmWRlFjK
+        Iir5/Zg2v7CUBWfxnN1xAVbXQ8utkTSPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnMaxi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        sQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEkSURBVEhL7dVP
+        K0RRHMbxE8UCxc7aG5CNxIKklIWXgBdgNxo2SsrSvIdZW1gosRLKxqvwEtjIf99njstpOsf5nWnEwlOf
+        Ovd375znduc24/5KRjGPBYMZ9MGcKdzjrcAJzNmGPjTcOspnCS9+acsOVGDNHEqud8s49UtTigtKkywY
+        wTo2I1ahjCGc1z9mYZIFV9CJmBv0Yg36AsNzhwiTLHjFrl9mo3f9DtroTIMgyQIN9cbkMg1tfoFrdLWg
+        2vwSg9DmXSuoNj/HgAZkAzW//ExHBRO4RXXnsfRjFlt41KA93xWs4BhDraOv6GfhyC/dIp7xgH0N2pN7
+        RLHo+ujjiOW/IJsfL3hCwy/N2YPeHFOa0N2UOoA544j9kadMoge/FefeAWeUdD/Mp03hAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="btnMinim.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        dgAAAHYBTnsmCAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAvSURBVDhPYxgF
+        gwQIArEzELuQiEF6QHoZrgHxfzIxSC9FBlwFYsq9MAoGFjAwAADb2CbsqdHnNAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

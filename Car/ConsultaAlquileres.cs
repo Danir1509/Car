@@ -47,18 +47,18 @@ namespace Car
             if (dgvAlquileres.SelectedRows.Count > 0)
             {
 
-                Registro_Alquiler editalqui= new Registro_Alquiler();
+                Registro_Alquiler editalqui = new Registro_Alquiler();
                 editalqui.operacion = "editar";
                 editalqui.ListarClientes();
                 editalqui.ListarConVehiculo();
                 editalqui.ListarEstadoAlquiler();
                 editalqui.id_alquiler = dgvAlquileres.CurrentRow.Cells[0].Value.ToString();
-                editalqui.cbxCliente.Text = dgvAlquileres.CurrentRow.Cells[1].Value.ToString();
-                editalqui.dtpFechaIniAlquiler.Text = dgvAlquileres.CurrentRow.Cells[5].Value.ToString();
-                editalqui.dtpFechaFinaliAlquiler.Text = dgvAlquileres.CurrentRow.Cells[6].Value.ToString();
-                editalqui.txtCostoAlqui.Text = dgvAlquileres.CurrentRow.Cells[2].Value.ToString();
+                editalqui.cbxCliente.Text = dgvAlquileres.CurrentRow.Cells[2].Value.ToString();
                 editalqui.cbxCVehiculo.Text = dgvAlquileres.CurrentRow.Cells[4].Value.ToString();
-                editalqui.cbxEstadoAl.Text = dgvAlquileres.CurrentRow.Cells[3].Value.ToString();             
+                editalqui.txtCostoAlqui.Text = dgvAlquileres.CurrentRow.Cells[5].Value.ToString();
+                editalqui.cbxEstadoAl.Text = dgvAlquileres.CurrentRow.Cells[6].Value.ToString();
+                editalqui.dtpFechaIniAlquiler.Text = dgvAlquileres.CurrentRow.Cells[7].Value.ToString();
+                editalqui.dtpFechaFinaliAlquiler.Text = dgvAlquileres.CurrentRow.Cells[8].Value.ToString();
 
 
                 editalqui.ShowDialog();
@@ -74,10 +74,22 @@ namespace Car
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            if (dgvAlquileres.SelectedRows.Count > 0)
+            {
+                //if()
+                //MessageBox.Show("Esta seguro que quiere eliminar el registro?");
+                alquiler.Id_alquiler= Convert.ToInt32(dgvAlquileres.CurrentRow.Cells[0].Value);
+                alquiler.eliminarAlquiler();
+                MessageBox.Show("Se elimino satisfactoriamente");
+                ListarAlquileres();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila");
+            }
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+            private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
             Administrador admin = new Administrador("nombre");

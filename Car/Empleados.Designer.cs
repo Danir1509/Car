@@ -162,6 +162,7 @@ namespace Car
             this.btnListReservas.TabIndex = 44;
             this.btnListReservas.Text = "Listado de Reservas";
             this.btnListReservas.UseVisualStyleBackColor = false;
+            this.btnListReservas.Click += new System.EventHandler(this.btnListReservas_Click);
             // 
             // btnListAlquileres
             // 
@@ -176,6 +177,7 @@ namespace Car
             this.btnListAlquileres.TabIndex = 39;
             this.btnListAlquileres.Text = "Listado de Alquileres";
             this.btnListAlquileres.UseVisualStyleBackColor = false;
+            this.btnListAlquileres.Click += new System.EventHandler(this.btnListAlquileres_Click);
             // 
             // btnListVehiculos
             // 
@@ -262,6 +264,7 @@ namespace Car
             this.btnConsultaReservas.TabIndex = 39;
             this.btnConsultaReservas.Text = "Consulta de Reservas";
             this.btnConsultaReservas.UseVisualStyleBackColor = false;
+            this.btnConsultaReservas.Click += new System.EventHandler(this.btnConsultaReservas_Click);
             // 
             // btnConsultaAlquiler
             // 
@@ -276,6 +279,7 @@ namespace Car
             this.btnConsultaAlquiler.TabIndex = 43;
             this.btnConsultaAlquiler.Text = "Consulta de Alquileres";
             this.btnConsultaAlquiler.UseVisualStyleBackColor = false;
+            this.btnConsultaAlquiler.Click += new System.EventHandler(this.btnConsultaAlquiler_Click);
             // 
             // btnConsultaCliente
             // 
