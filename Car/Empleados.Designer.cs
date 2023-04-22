@@ -105,6 +105,7 @@ namespace Car
             this.btnAutores.TabIndex = 39;
             this.btnAutores.Text = "Autores App";
             this.btnAutores.UseVisualStyleBackColor = false;
+            this.btnAutores.Click += new System.EventHandler(this.btnAutores_Click);
             // 
             // btnVersion
             // 
@@ -119,6 +120,7 @@ namespace Car
             this.btnVersion.TabIndex = 38;
             this.btnVersion.Text = "Versión App";
             this.btnVersion.UseVisualStyleBackColor = false;
+            this.btnVersion.Click += new System.EventHandler(this.btnVersion_Click);
             // 
             // panelReportes
             // 

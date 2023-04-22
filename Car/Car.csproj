@@ -91,6 +91,12 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="AutoresApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoresApp.Designer.cs">
+      <DependentUpon>AutoresApp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Alquileres.cs" />
     <Compile Include="Clases\Cliente.cs" />
     <Compile Include="Clases\Contrato.cs" />
@@ -233,6 +239,12 @@
       <DependentUpon>ReporteVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="VersionApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionApp.Designer.cs">
+      <DependentUpon>VersionApp.cs</DependentUpon>
+    </Compile>
     <Compile Include="VistaRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +307,9 @@
     </Compile>
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoresApp.resx">
+      <DependentUpon>AutoresApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConsulaAlquilerE.resx">
       <DependentUpon>ConsulaAlquilerE.cs</DependentUpon>
@@ -377,6 +392,9 @@
     <EmbeddedResource Include="Reportes\ReporteVehiculo.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteVehiculo.resx">
       <DependentUpon>ReporteVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionApp.resx">
+      <DependentUpon>VersionApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VistaRegistro.resx">
       <DependentUpon>VistaRegistro.cs</DependentUpon>

@@ -34,22 +34,63 @@ namespace Car.Reportes
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.yalexrentaFinal = new Car.yalexrentaFinal();
             this.alquileresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.alquileresTableAdapter = new Car.yalexrentaFinalTableAdapters.alquileresTableAdapter();
+            this.yalexrentaFinal = new Car.yalexrentaFinal();
             this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientesTableAdapter = new Car.yalexrentaFinalTableAdapters.clientesTableAdapter();
             this.vehiculoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.vehiculoTableAdapter = new Car.yalexrentaFinalTableAdapters.vehiculoTableAdapter();
             this.contratosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.alquileresTableAdapter = new Car.yalexrentaFinalTableAdapters.alquileresTableAdapter();
+            this.clientesTableAdapter = new Car.yalexrentaFinalTableAdapters.clientesTableAdapter();
+            this.vehiculoTableAdapter = new Car.yalexrentaFinalTableAdapters.vehiculoTableAdapter();
             this.contratosTableAdapter = new Car.yalexrentaFinalTableAdapters.contratosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.yalexrentaFinal)).BeginInit();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.alquileresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yalexrentaFinal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiculoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contratosBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // alquileresBindingSource
+            // 
+            this.alquileresBindingSource.DataMember = "alquileres";
+            this.alquileresBindingSource.DataSource = this.yalexrentaFinal;
+            // 
+            // yalexrentaFinal
+            // 
+            this.yalexrentaFinal.DataSetName = "yalexrentaFinal";
+            this.yalexrentaFinal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "clientes";
+            this.clientesBindingSource.DataSource = this.yalexrentaFinal;
+            // 
+            // vehiculoBindingSource
+            // 
+            this.vehiculoBindingSource.DataMember = "vehiculo";
+            this.vehiculoBindingSource.DataSource = this.yalexrentaFinal;
+            // 
+            // contratosBindingSource
+            // 
+            this.contratosBindingSource.DataMember = "contratos";
+            this.contratosBindingSource.DataSource = this.yalexrentaFinal;
+            // 
+            // alquileresTableAdapter
+            // 
+            this.alquileresTableAdapter.ClearBeforeFill = true;
+            // 
+            // clientesTableAdapter
+            // 
+            this.clientesTableAdapter.ClearBeforeFill = true;
+            // 
+            // vehiculoTableAdapter
+            // 
+            this.vehiculoTableAdapter.ClearBeforeFill = true;
+            // 
+            // contratosTableAdapter
+            // 
+            this.contratosTableAdapter.ClearBeforeFill = true;
             // 
             // reportViewer1
             // 
@@ -73,47 +114,6 @@ namespace Car.Reportes
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
             // 
-            // yalexrentaFinal
-            // 
-            this.yalexrentaFinal.DataSetName = "yalexrentaFinal";
-            this.yalexrentaFinal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // alquileresBindingSource
-            // 
-            this.alquileresBindingSource.DataMember = "alquileres";
-            this.alquileresBindingSource.DataSource = this.yalexrentaFinal;
-            // 
-            // alquileresTableAdapter
-            // 
-            this.alquileresTableAdapter.ClearBeforeFill = true;
-            // 
-            // clientesBindingSource
-            // 
-            this.clientesBindingSource.DataMember = "clientes";
-            this.clientesBindingSource.DataSource = this.yalexrentaFinal;
-            // 
-            // clientesTableAdapter
-            // 
-            this.clientesTableAdapter.ClearBeforeFill = true;
-            // 
-            // vehiculoBindingSource
-            // 
-            this.vehiculoBindingSource.DataMember = "vehiculo";
-            this.vehiculoBindingSource.DataSource = this.yalexrentaFinal;
-            // 
-            // vehiculoTableAdapter
-            // 
-            this.vehiculoTableAdapter.ClearBeforeFill = true;
-            // 
-            // contratosBindingSource
-            // 
-            this.contratosBindingSource.DataMember = "contratos";
-            this.contratosBindingSource.DataSource = this.yalexrentaFinal;
-            // 
-            // contratosTableAdapter
-            // 
-            this.contratosTableAdapter.ClearBeforeFill = true;
-            // 
             // ReporteAlquileres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -123,8 +123,8 @@ namespace Car.Reportes
             this.Name = "ReporteAlquileres";
             this.Text = "ReporteAlquileres";
             this.Load += new System.EventHandler(this.ReporteAlquileres_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.yalexrentaFinal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alquileresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yalexrentaFinal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehiculoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contratosBindingSource)).EndInit();
@@ -133,8 +133,6 @@ namespace Car.Reportes
         }
 
         #endregion
-
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private yalexrentaFinal yalexrentaFinal;
         private System.Windows.Forms.BindingSource alquileresBindingSource;
         private yalexrentaFinalTableAdapters.alquileresTableAdapter alquileresTableAdapter;
@@ -144,5 +142,6 @@ namespace Car.Reportes
         private yalexrentaFinalTableAdapters.vehiculoTableAdapter vehiculoTableAdapter;
         private System.Windows.Forms.BindingSource contratosBindingSource;
         private yalexrentaFinalTableAdapters.contratosTableAdapter contratosTableAdapter;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

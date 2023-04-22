@@ -392,3 +392,6 @@ C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.pdb
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.ConsulaAlquilerE.resources
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.ConsultarReservaE.resources
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Reportes.ReporteReserva.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.csproj.AssemblyReference.cache
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.AutoresApp.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.VersionApp.resources

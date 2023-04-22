@@ -107,5 +107,17 @@ namespace Car
             ReporteReserva rreserva = new ReporteReserva();
             rreserva.Show();
         }
+
+        private void btnVersion_Click(object sender, EventArgs e)
+        {
+            VersionApp versionE = new VersionApp();
+            versionE.Show();
+        }
+
+        private void btnAutores_Click(object sender, EventArgs e)
+        {
+            AutoresApp autoresE = new AutoresApp();
+            autoresE.Show();
+        }
     }
 }
