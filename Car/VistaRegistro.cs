@@ -32,6 +32,7 @@ namespace Car
                 bt.listarTipoTransmision();
                 bt.listarCategoria();
                 bt.ShowDialog();
+            this.Close();
                 mostrarVehiculos();
             }
 

@@ -201,12 +201,14 @@ namespace Car
         {
             vista_registro_cliente_admon vistacuatro = new vista_registro_cliente_admon();
             vistacuatro.Show();
+            this.Close();
         }
 
         private void btnRegistroCliente_Click(object sender, EventArgs e)
         {
             Form1 vistauno = new Form1();
             vistauno.Show();
+            this.Close();
         }
 
         private void btnRegistroAdministrador_Click(object sender, EventArgs e)

@@ -47,8 +47,8 @@ namespace Car
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-            //Administrador admin = new Administrador("nombre");
-            //admin.Show();
+            Administrador admin = new Administrador("nombre");
+            admin.Show();
         }
 
         private void btnMaxi_Click(object sender, EventArgs e)
@@ -108,6 +108,7 @@ namespace Car
                     reserva.Id_empleado = Convert.ToInt32(cbxEmpleado.SelectedValue);
                     reserva.Hora = txtHora.Text;
                     reserva.Fecha = dtpFecha.Text;
+                    this.Close();
                     reserva.insertarReserva();
 
                 MessageBox.Show("Datos de Reserva insertados correctamente");

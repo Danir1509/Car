@@ -45,8 +45,9 @@ namespace Car
         private void btncerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-            vista_registro_cliente_admon loquesea = new vista_registro_cliente_admon();
+            Administrador loquesea = new Administrador("nombre");
             loquesea.Show();
+            this.Close();
         }
 
         private void btnminimizar_Click(object sender, EventArgs e)

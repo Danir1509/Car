@@ -32,6 +32,8 @@ namespace Car
 
         private void btncerrar_Click(object sender, EventArgs e)
         {
+            Administrador admin = new Administrador("nombre");
+            admin.Show();
             this.Close();
         }
         private void panel3_MouseMove(object sender, MouseEventArgs e)
@@ -76,6 +78,7 @@ namespace Car
             Form1 cliente = new Form1();
             cliente.operacion = "insertar";
             cliente.ShowDialog();
+            this.Close();
             ListarCliente();
 
         }
@@ -125,6 +128,7 @@ namespace Car
                 editcliente.txtlicencia.Text = dgclientes.CurrentRow.Cells[7].Value.ToString();
                 editcliente.txtestado.Text = dgclientes.CurrentRow.Cells[8].Value.ToString();
                 editcliente.ShowDialog();
+                this.Close();
                 ListarCliente();
 
 

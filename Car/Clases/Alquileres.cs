@@ -131,7 +131,7 @@ namespace Car.Clases
         public void eliminarAlquiler()
         {
             comando.Connection = Conexion.Conectar();
-            comando.CommandText = "delete alquileres where id_alquiler" + id_alquiler;
+            comando.CommandText = "delete alquileres where id_alquiler=" + id_alquiler;
             comando.CommandType = CommandType.Text;
             comando.ExecuteNonQuery();
             Conexion.Conectar().Close();
