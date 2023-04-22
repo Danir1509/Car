@@ -94,6 +94,7 @@
     <Compile Include="Clases\Alquileres.cs" />
     <Compile Include="Clases\Contrato.cs" />
     <Compile Include="Clases\Reserva.cs" />
+    <Compile Include="Clases\vehiculo.cs" />
     <Compile Include="ConsulaAlquilerE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +112,12 @@
     </Compile>
     <Compile Include="ConsultaReservas.Designer.cs">
       <DependentUpon>ConsultaReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaVehiculoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaVehiculoEmpleado.Designer.cs">
+      <DependentUpon>ConsultaVehiculoEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="ContratoDetalle.cs">
       <SubType>Form</SubType>
@@ -157,6 +164,12 @@
     <Compile Include="RegistroReservas.Designer.cs">
       <DependentUpon>RegistroReservas.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistroVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroVehiculo.Designer.cs">
+      <DependentUpon>RegistroVehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReporteAlquiler.cs" />
     <Compile Include="Reportes\ReporteAlquileres.cs">
       <SubType>Form</SubType>
@@ -176,7 +189,19 @@
     <Compile Include="Reportes\ReporteContratoempleado.Designer.cs">
       <DependentUpon>ReporteContratoempleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReporteVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteVehiculo.Designer.cs">
+      <DependentUpon>ReporteVehiculo.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="VistaRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaRegistro.Designer.cs">
+      <DependentUpon>VistaRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="yalexrentaContratos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -202,6 +227,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>yalexrentaDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="yalexrentaFinal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yalexrentaFinal.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultaReservas.resx">
       <DependentUpon>ConsultaReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaVehiculoEmpleado.resx">
+      <DependentUpon>ConsultaVehiculoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ContratoDetalle.resx">
       <DependentUpon>ContratoDetalle.cs</DependentUpon>
@@ -241,6 +274,9 @@
     <EmbeddedResource Include="RegistroReservas.resx">
       <DependentUpon>RegistroReservas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RegistroVehiculo.resx">
+      <DependentUpon>RegistroVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteAlquileres.resx">
       <DependentUpon>ReporteAlquileres.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,6 +287,13 @@
     <EmbeddedResource Include="Reportes\ReporteContratoempleado.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteContratoempleado.resx">
       <DependentUpon>ReporteContratoempleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteVehiculo.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVehiculo.resx">
+      <DependentUpon>ReporteVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaRegistro.resx">
+      <DependentUpon>VistaRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -316,6 +359,17 @@
     </None>
     <None Include="yalexrentaDataSet3.xss">
       <DependentUpon>yalexrentaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="yalexrentaFinal.xsc">
+      <DependentUpon>yalexrentaFinal.xsd</DependentUpon>
+    </None>
+    <None Include="yalexrentaFinal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>yalexrentaFinal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="yalexrentaFinal.xss">
+      <DependentUpon>yalexrentaFinal.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

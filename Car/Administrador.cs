@@ -189,5 +189,11 @@ namespace Car
             contrato.Show();
             this.Close();
         }
+
+        private void btnConsultaVehiculos_Click(object sender, EventArgs e)
+        {
+            VistaRegistro r = new VistaRegistro();
+            r.Show();
+        }
     }
 }
