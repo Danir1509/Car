@@ -94,6 +94,12 @@
     <Compile Include="Clases\Alquileres.cs" />
     <Compile Include="Clases\Contrato.cs" />
     <Compile Include="Clases\Reserva.cs" />
+    <Compile Include="ConsulaAlquilerE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulaAlquilerE.Designer.cs">
+      <DependentUpon>ConsulaAlquilerE.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaAlquileres.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,7 @@
     <Compile Include="RegistroReservas.Designer.cs">
       <DependentUpon>RegistroReservas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReporteAlquiler.cs" />
     <Compile Include="Reportes\ReporteContrato.cs">
       <SubType>Form</SubType>
     </Compile>
