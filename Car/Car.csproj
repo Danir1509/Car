@@ -158,6 +158,12 @@
       <DependentUpon>RegistroReservas.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReporteAlquiler.cs" />
+    <Compile Include="Reportes\ReporteAlquileres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteAlquileres.Designer.cs">
+      <DependentUpon>ReporteAlquileres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReporteContrato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroReservas.resx">
       <DependentUpon>RegistroReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteAlquileres.resx">
+      <DependentUpon>ReporteAlquileres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteContrato.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteContrato.resx">
