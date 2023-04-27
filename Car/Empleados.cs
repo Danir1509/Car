@@ -137,5 +137,11 @@ namespace Car
             ReporteContratoempleado emple = new ReporteContratoempleado();
             emple.Show();
         }
+
+        private void btnConsultaVehiculos_Click(object sender, EventArgs e)
+        {
+            ConsultaVehiculoEmpleado emple = new ConsultaVehiculoEmpleado();
+            emple.Show();
+        }
     }
 }

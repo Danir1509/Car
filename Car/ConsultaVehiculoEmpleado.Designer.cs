@@ -87,6 +87,7 @@ namespace Car
             this.btnCerrar.Size = new System.Drawing.Size(60, 52);
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
             // txtBuscador
             // 

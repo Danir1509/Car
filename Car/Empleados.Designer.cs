@@ -256,6 +256,7 @@ namespace Car
             this.btnConsultaVehiculos.TabIndex = 45;
             this.btnConsultaVehiculos.Text = "Consulta de Vehiculos";
             this.btnConsultaVehiculos.UseVisualStyleBackColor = false;
+            this.btnConsultaVehiculos.Click += new System.EventHandler(this.btnConsultaVehiculos_Click);
             // 
             // btnConsultaContratos
             // 
