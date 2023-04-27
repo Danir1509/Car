@@ -60,11 +60,13 @@ namespace Car
             this.btnRegistroEmpleado = new System.Windows.Forms.Button();
             this.panelMantenimi = new System.Windows.Forms.Panel();
             this.btnConsultaVehiculos = new System.Windows.Forms.Button();
+            this.btnConsultaEmple = new System.Windows.Forms.Button();
             this.btnConsultaContratos = new System.Windows.Forms.Button();
             this.btnConsultaReservas = new System.Windows.Forms.Button();
             this.btnConsultaAlquiler = new System.Windows.Forms.Button();
             this.btnConsultaCliente = new System.Windows.Forms.Button();
             this.panelReportes = new System.Windows.Forms.Panel();
+            this.bntListaEmpleados = new System.Windows.Forms.Button();
             this.btnListContratos = new System.Windows.Forms.Button();
             this.btnListReservas = new System.Windows.Forms.Button();
             this.btnListAlquileres = new System.Windows.Forms.Button();
@@ -80,8 +82,6 @@ namespace Car
             this.btnMinim = new System.Windows.Forms.Button();
             this.btnMaxi = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnConsultaEmple = new System.Windows.Forms.Button();
-            this.bntListaEmpleados = new System.Windows.Forms.Button();
             this.MenuAdminPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -411,6 +411,7 @@ namespace Car
             this.btnRegistroVehiculo.TabIndex = 39;
             this.btnRegistroVehiculo.Text = "Registro de Vehiculo";
             this.btnRegistroVehiculo.UseVisualStyleBackColor = false;
+            this.btnRegistroVehiculo.Click += new System.EventHandler(this.btnRegistroVehiculo_Click);
             // 
             // btnRegistroAlquiler
             // 
@@ -542,6 +543,21 @@ namespace Car
             this.btnConsultaVehiculos.UseVisualStyleBackColor = false;
             this.btnConsultaVehiculos.Click += new System.EventHandler(this.btnConsultaVehiculos_Click);
             // 
+            // btnConsultaEmple
+            // 
+            this.btnConsultaEmple.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnConsultaEmple.FlatAppearance.BorderSize = 0;
+            this.btnConsultaEmple.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultaEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsultaEmple.Location = new System.Drawing.Point(0, 286);
+            this.btnConsultaEmple.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsultaEmple.Name = "btnConsultaEmple";
+            this.btnConsultaEmple.Size = new System.Drawing.Size(241, 60);
+            this.btnConsultaEmple.TabIndex = 46;
+            this.btnConsultaEmple.Text = "Consulta de Empleados";
+            this.btnConsultaEmple.UseVisualStyleBackColor = false;
+            this.btnConsultaEmple.Click += new System.EventHandler(this.btnConsultaEmple_Click);
+            // 
             // btnConsultaContratos
             // 
             this.btnConsultaContratos.BackColor = System.Drawing.Color.PaleGreen;
@@ -618,6 +634,21 @@ namespace Car
             this.panelReportes.TabIndex = 43;
             this.panelReportes.Visible = false;
             // 
+            // bntListaEmpleados
+            // 
+            this.bntListaEmpleados.BackColor = System.Drawing.Color.PaleGreen;
+            this.bntListaEmpleados.FlatAppearance.BorderSize = 0;
+            this.bntListaEmpleados.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntListaEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bntListaEmpleados.Location = new System.Drawing.Point(-1, 287);
+            this.bntListaEmpleados.Margin = new System.Windows.Forms.Padding(4);
+            this.bntListaEmpleados.Name = "bntListaEmpleados";
+            this.bntListaEmpleados.Size = new System.Drawing.Size(241, 60);
+            this.bntListaEmpleados.TabIndex = 46;
+            this.bntListaEmpleados.Text = "Listado de Empleados";
+            this.bntListaEmpleados.UseVisualStyleBackColor = false;
+            this.bntListaEmpleados.Click += new System.EventHandler(this.bntListaEmpleados_Click);
+            // 
             // btnListContratos
             // 
             this.btnListContratos.BackColor = System.Drawing.Color.PaleGreen;
@@ -676,6 +707,7 @@ namespace Car
             this.btnListVehiculos.TabIndex = 43;
             this.btnListVehiculos.Text = "Listado de Vehiculos ";
             this.btnListVehiculos.UseVisualStyleBackColor = false;
+            this.btnListVehiculos.Click += new System.EventHandler(this.btnListVehiculos_Click);
             // 
             // btnListCliente
             // 
@@ -830,36 +862,6 @@ namespace Car
             this.btnCerrar.TabIndex = 7;
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // btnConsultaEmple
-            // 
-            this.btnConsultaEmple.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnConsultaEmple.FlatAppearance.BorderSize = 0;
-            this.btnConsultaEmple.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultaEmple.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsultaEmple.Location = new System.Drawing.Point(0, 286);
-            this.btnConsultaEmple.Margin = new System.Windows.Forms.Padding(4);
-            this.btnConsultaEmple.Name = "btnConsultaEmple";
-            this.btnConsultaEmple.Size = new System.Drawing.Size(241, 60);
-            this.btnConsultaEmple.TabIndex = 46;
-            this.btnConsultaEmple.Text = "Consulta de Empleados";
-            this.btnConsultaEmple.UseVisualStyleBackColor = false;
-            this.btnConsultaEmple.Click += new System.EventHandler(this.btnConsultaEmple_Click);
-            // 
-            // bntListaEmpleados
-            // 
-            this.bntListaEmpleados.BackColor = System.Drawing.Color.PaleGreen;
-            this.bntListaEmpleados.FlatAppearance.BorderSize = 0;
-            this.bntListaEmpleados.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntListaEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bntListaEmpleados.Location = new System.Drawing.Point(-1, 287);
-            this.bntListaEmpleados.Margin = new System.Windows.Forms.Padding(4);
-            this.bntListaEmpleados.Name = "bntListaEmpleados";
-            this.bntListaEmpleados.Size = new System.Drawing.Size(241, 60);
-            this.bntListaEmpleados.TabIndex = 46;
-            this.bntListaEmpleados.Text = "Listado de Empleados";
-            this.bntListaEmpleados.UseVisualStyleBackColor = false;
-            this.bntListaEmpleados.Click += new System.EventHandler(this.bntListaEmpleados_Click);
             // 
             // Administrador
             // 
