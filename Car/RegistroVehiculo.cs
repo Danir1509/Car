@@ -115,10 +115,9 @@ namespace Car
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Administrador admin = new Administrador("nombre");
+            Administrador admin = new Administrador("");
             admin.Show();
-            
+            this.Close();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)

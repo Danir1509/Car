@@ -51,8 +51,6 @@ namespace Car
 
         private void btncerrar_Click(object sender, EventArgs e)
         {
-            Administrador admin = new Administrador("nombre");
-            admin.Show();
             this.Close();
         }
 

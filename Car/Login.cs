@@ -27,12 +27,12 @@ namespace Car
                 if (dt.Rows.Count == 1)
                 {
                     this.Hide();
-                    if (dt.Rows[0][1].ToString() == "Admin")
+                    if (dt.Rows[0][1].ToString() == "admin")
                     {
                         new Administrador(dt.Rows[0][0].ToString()).Show();
 
                     }
-                    else if (dt.Rows[0][1].ToString() == "Empleado")
+                    else if (dt.Rows[0][1].ToString() == "empleado")
                     {
                         new Empleados(dt.Rows[0][0].ToString()).Show();
                     }
@@ -121,6 +121,11 @@ namespace Car
                 Left = Left + (e.X - posX);
                 Top = Top + (e.Y - posY);
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

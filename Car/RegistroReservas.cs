@@ -108,7 +108,7 @@ namespace Car
                     reserva.Id_empleado = Convert.ToInt32(cbxEmpleado.SelectedValue);
                     reserva.Hora = txtHora.Text;
                     reserva.Fecha = dtpFecha.Text;
-                    
+                    this.Close();
                     reserva.insertarReserva();
 
                 MessageBox.Show("Datos de Reserva insertados correctamente");

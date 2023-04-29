@@ -65,7 +65,7 @@ namespace Car
             this.txtUser.Location = new System.Drawing.Point(218, 273);
             this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(177, 25);
+            this.txtUser.Size = new System.Drawing.Size(177, 29);
             this.txtUser.TabIndex = 1;
             // 
             // txtPass
@@ -74,7 +74,7 @@ namespace Car
             this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(177, 25);
+            this.txtPass.Size = new System.Drawing.Size(177, 29);
             this.txtPass.TabIndex = 2;
             // 
             // label1
@@ -84,7 +84,7 @@ namespace Car
             this.label1.Location = new System.Drawing.Point(120, 276);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 23);
+            this.label1.Size = new System.Drawing.Size(114, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "Usuario:";
             // 
@@ -95,7 +95,7 @@ namespace Car
             this.label2.Location = new System.Drawing.Point(105, 321);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 23);
+            this.label2.Size = new System.Drawing.Size(137, 30);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password:";
             // 
@@ -192,7 +192,7 @@ namespace Car
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(486, 437);
@@ -211,6 +211,7 @@ namespace Car
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTituloLogin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbOcultar)).EndInit();
