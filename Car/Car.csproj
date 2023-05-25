@@ -100,6 +100,7 @@
     <Compile Include="Clases\Alquileres.cs" />
     <Compile Include="Clases\Cliente.cs" />
     <Compile Include="Clases\Contrato.cs" />
+    <Compile Include="Clases\Entrega.cs" />
     <Compile Include="Clases\RegistroAdmon.cs" />
     <Compile Include="Clases\Reserva.cs" />
     <Compile Include="Clases\vehiculo.cs" />
@@ -114,6 +115,12 @@
     </Compile>
     <Compile Include="ConsultaAlquileres.Designer.cs">
       <DependentUpon>ConsultaAlquileres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaEntrega.Designer.cs">
+      <DependentUpon>ConsultaEntrega.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultaReservas.cs">
       <SubType>Form</SubType>
@@ -177,6 +184,12 @@
     </Compile>
     <Compile Include="RegistroContrato.Designer.cs">
       <DependentUpon>RegistroContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroEntregas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroEntregas.Designer.cs">
+      <DependentUpon>RegistroEntregas.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistroReservas.cs">
       <SubType>Form</SubType>
@@ -322,6 +335,9 @@
     <EmbeddedResource Include="ConsultaAlquileres.resx">
       <DependentUpon>ConsultaAlquileres.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaEntrega.resx">
+      <DependentUpon>ConsultaEntrega.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaReservas.resx">
       <DependentUpon>ConsultaReservas.cs</DependentUpon>
     </EmbeddedResource>
@@ -360,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroContrato.resx">
       <DependentUpon>RegistroContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroEntregas.resx">
+      <DependentUpon>RegistroEntregas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroReservas.resx">
       <DependentUpon>RegistroReservas.cs</DependentUpon>

@@ -2,6 +2,8 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Car
 {
@@ -17,9 +19,18 @@ namespace Car
             try
             {
                 Conexion.Conectar();
-                SqlCommand cmd = new SqlCommand("SELECT nombre, tipo_empleado FROM empleado WHERE usuario = @usuario AND contrasena = @pas", Conexion.Conectar()); ;
+                SqlCommand cmd = new SqlCommand("SELECT nombre, rol FROM empleado WHERE usuario = @usuario AND contrasena = @pas", Conexion.Conectar());
                 cmd.Parameters.AddWithValue("usuario", usuario);
-                cmd.Parameters.AddWithValue("pas", contrasena);
+
+                using (SHA256 sha256 = SHA256.Create())
+                {
+                    byte[] bytes = Encoding.UTF8.GetBytes(contrasena);
+                    byte[] hashBytes = sha256.ComputeHash(bytes);
+                    string contrasenaSHA256 = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+
+                    cmd.Parameters.AddWithValue("pas", contrasenaSHA256);
+                }
+
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
@@ -30,7 +41,6 @@ namespace Car
                     if (dt.Rows[0][1].ToString() == "admin")
                     {
                         new Administrador(dt.Rows[0][0].ToString()).Show();
-
                     }
                     else if (dt.Rows[0][1].ToString() == "empleado")
                     {

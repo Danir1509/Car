@@ -82,6 +82,8 @@ namespace Car
             this.btnMinim = new System.Windows.Forms.Button();
             this.btnMaxi = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnEntrega = new System.Windows.Forms.Button();
+            this.btnConsulEntrega = new System.Windows.Forms.Button();
             this.MenuAdminPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -863,12 +865,44 @@ namespace Car
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnEntrega
+            // 
+            this.btnEntrega.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnEntrega.FlatAppearance.BorderSize = 0;
+            this.btnEntrega.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEntrega.Location = new System.Drawing.Point(1, 316);
+            this.btnEntrega.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEntrega.Name = "btnEntrega";
+            this.btnEntrega.Size = new System.Drawing.Size(241, 60);
+            this.btnEntrega.TabIndex = 38;
+            this.btnEntrega.Text = "Registro de Entrega";
+            this.btnEntrega.UseVisualStyleBackColor = false;
+            this.btnEntrega.Click += new System.EventHandler(this.btnEntrega_Click);
+            // 
+            // btnConsulEntrega
+            // 
+            this.btnConsulEntrega.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnConsulEntrega.FlatAppearance.BorderSize = 0;
+            this.btnConsulEntrega.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsulEntrega.Location = new System.Drawing.Point(954, 556);
+            this.btnConsulEntrega.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConsulEntrega.Name = "btnConsulEntrega";
+            this.btnConsulEntrega.Size = new System.Drawing.Size(241, 60);
+            this.btnConsulEntrega.TabIndex = 65;
+            this.btnConsulEntrega.Text = "Consulta de Entrega";
+            this.btnConsulEntrega.UseVisualStyleBackColor = false;
+            this.btnConsulEntrega.Click += new System.EventHandler(this.btnConsulEntrega_Click);
+            // 
             // Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1736, 686);
+            this.Controls.Add(this.btnConsulEntrega);
+            this.Controls.Add(this.btnEntrega);
             this.Controls.Add(this.panelTituloAdmin);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.panelAcercaDe);
@@ -965,5 +999,7 @@ namespace Car
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnConsultaEmple;
         private System.Windows.Forms.Button bntListaEmpleados;
+        private System.Windows.Forms.Button btnEntrega;
+        private System.Windows.Forms.Button btnConsulEntrega;
     }
 }

@@ -54,11 +54,12 @@ namespace Car
                 editalqui.ListarEstadoAlquiler();
                 editalqui.id_alquiler = dgvAlquileres.CurrentRow.Cells[0].Value.ToString();
                 editalqui.cbxCliente.Text = dgvAlquileres.CurrentRow.Cells[2].Value.ToString();
-                editalqui.cbxCVehiculo.Text = dgvAlquileres.CurrentRow.Cells[4].Value.ToString();
+                editalqui.cbxCVehiculo.Text = dgvAlquileres.CurrentRow.Cells[3].Value.ToString();
                 editalqui.txtCostoAlqui.Text = dgvAlquileres.CurrentRow.Cells[5].Value.ToString();
                 editalqui.cbxEstadoAl.Text = dgvAlquileres.CurrentRow.Cells[6].Value.ToString();
                 editalqui.dtpFechaIniAlquiler.Text = dgvAlquileres.CurrentRow.Cells[7].Value.ToString();
                 editalqui.dtpFechaFinaliAlquiler.Text = dgvAlquileres.CurrentRow.Cells[8].Value.ToString();
+
 
 
                 editalqui.ShowDialog();

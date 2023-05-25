@@ -17,6 +17,7 @@ namespace Car
         {
             InitializeComponent();
         }
+
         public string operacion = "insertar";
         internal string id_contrato;
 

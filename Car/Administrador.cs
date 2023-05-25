@@ -195,6 +195,7 @@ namespace Car
         {
             VistaRegistro r = new VistaRegistro();
             r.Show();
+            this.Close();
         }
 
         private void btnConsultaCliente_Click(object sender, EventArgs e)
@@ -223,6 +224,7 @@ namespace Car
         {
             Vista_administrador_empleado_admon vistatres = new Vista_administrador_empleado_admon();
             vistatres.Show();
+            this.Close();
         }
 
         private void btnRegistroEmpleado_Click(object sender, EventArgs e)
@@ -293,7 +295,23 @@ namespace Car
             RegistroVehiculo bt = new RegistroVehiculo();
             
             bt.Show();
+            this.Close();
+        }
 
+        private void btnEntrega_Click(object sender, EventArgs e)
+        {
+            RegistroEntregas bt = new RegistroEntregas();
+
+            bt.Show();
+            this.Close();
+        }
+
+        private void btnConsulEntrega_Click(object sender, EventArgs e)
+        {
+            ConsultaEntrega bt = new ConsultaEntrega();
+
+            bt.Show();
+            this.Close();
         }
     }
 }
