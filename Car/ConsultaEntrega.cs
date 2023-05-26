@@ -125,5 +125,17 @@ namespace Car
                 MessageBox.Show("---- Selecciones una fila para Eliminarla -----");
             }
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Administrador mostrar = new Administrador("nombre");
+            mostrar.Show();
+            this.Close();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -160,5 +160,17 @@ namespace Car
                 pcImagenDevo.Image = Image.FromFile(fo.FileName);
             }
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            ConsultaEntrega mostrar = new ConsultaEntrega();
+            mostrar.Show();
+            this.Close();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -237,6 +237,7 @@ namespace Car
             this.btnMinimizar.Size = new System.Drawing.Size(34, 59);
             this.btnMinimizar.TabIndex = 1;
             this.btnMinimizar.UseVisualStyleBackColor = true;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnCerrar
             // 
@@ -249,6 +250,7 @@ namespace Car
             this.btnCerrar.Size = new System.Drawing.Size(37, 59);
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnGuardarEntrega
             // 
