@@ -313,5 +313,11 @@ namespace Car
             bt.Show();
             this.Close();
         }
+
+        private void btnReportEntregas_Click(object sender, EventArgs e)
+        {
+            ReporteEntrega rp = new ReporteEntrega();
+            rp.Show();
+        }
     }
 }

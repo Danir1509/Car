@@ -239,6 +239,12 @@
     <Compile Include="Reportes\ReporteEmpleados_Administradores.Designer.cs">
       <DependentUpon>ReporteEmpleados_Administradores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReporteEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteEntrega.Designer.cs">
+      <DependentUpon>ReporteEntrega.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReporteReserva.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,6 +323,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>yalexrentaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="yalexrentaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>yalexrentaDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="yalexrentaFinal.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -409,6 +420,10 @@
     <EmbeddedResource Include="Reportes\ReporteEmpleados_Administradores.resx">
       <DependentUpon>ReporteEmpleados_Administradores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteEntrega.resx">
+      <DependentUpon>ReporteEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteEntregas.rdlc" />
     <EmbeddedResource Include="Reportes\ReporteReserva.resx">
       <DependentUpon>ReporteReserva.cs</DependentUpon>
     </EmbeddedResource>
@@ -510,6 +525,17 @@
     </None>
     <None Include="yalexrentaDataSet3.xss">
       <DependentUpon>yalexrentaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="yalexrentaDataSet4.xsc">
+      <DependentUpon>yalexrentaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="yalexrentaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>yalexrentaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="yalexrentaDataSet4.xss">
+      <DependentUpon>yalexrentaDataSet4.xsd</DependentUpon>
     </None>
     <None Include="yalexrentaFinal.xsc">
       <DependentUpon>yalexrentaFinal.xsd</DependentUpon>

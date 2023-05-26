@@ -415,3 +415,4 @@ C:\Users\50360\source\repos\Car\Car\obj\Debug\Car.vista_registro_cliente_admon.r
 C:\Users\50360\source\repos\Car\Car\obj\Debug\Car.Vista_registro_cliente_empleado.resources
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.ConsultaEntrega.resources
 C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.RegistroEntregas.resources
+C:\Users\50360\Documents\Repositorio\Car\Car\obj\Debug\Car.Reportes.ReporteEntrega.resources
