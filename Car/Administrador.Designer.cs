@@ -392,12 +392,13 @@ namespace Car
             // panelAlquileres
             // 
             this.panelAlquileres.BackColor = System.Drawing.Color.PaleGreen;
+            this.panelAlquileres.Controls.Add(this.btnEntrega);
             this.panelAlquileres.Controls.Add(this.btnRegistroVehiculo);
             this.panelAlquileres.Controls.Add(this.btnRegistroAlquiler);
             this.panelAlquileres.Location = new System.Drawing.Point(240, 190);
             this.panelAlquileres.Margin = new System.Windows.Forms.Padding(4);
             this.panelAlquileres.Name = "panelAlquileres";
-            this.panelAlquileres.Size = new System.Drawing.Size(241, 121);
+            this.panelAlquileres.Size = new System.Drawing.Size(241, 183);
             this.panelAlquileres.TabIndex = 39;
             this.panelAlquileres.Visible = false;
             // 
@@ -407,7 +408,7 @@ namespace Car
             this.btnRegistroVehiculo.FlatAppearance.BorderSize = 0;
             this.btnRegistroVehiculo.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistroVehiculo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistroVehiculo.Location = new System.Drawing.Point(0, 58);
+            this.btnRegistroVehiculo.Location = new System.Drawing.Point(0, 57);
             this.btnRegistroVehiculo.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistroVehiculo.Name = "btnRegistroVehiculo";
             this.btnRegistroVehiculo.Size = new System.Drawing.Size(241, 60);
@@ -519,6 +520,7 @@ namespace Car
             // 
             this.panelMantenimi.BackColor = System.Drawing.Color.PaleGreen;
             this.panelMantenimi.Controls.Add(this.btnConsultaVehiculos);
+            this.panelMantenimi.Controls.Add(this.btnConsulEntrega);
             this.panelMantenimi.Controls.Add(this.btnConsultaEmple);
             this.panelMantenimi.Controls.Add(this.btnConsultaContratos);
             this.panelMantenimi.Controls.Add(this.btnConsultaReservas);
@@ -527,7 +529,7 @@ namespace Car
             this.panelMantenimi.Location = new System.Drawing.Point(955, 190);
             this.panelMantenimi.Margin = new System.Windows.Forms.Padding(4);
             this.panelMantenimi.Name = "panelMantenimi";
-            this.panelMantenimi.Size = new System.Drawing.Size(241, 352);
+            this.panelMantenimi.Size = new System.Drawing.Size(241, 408);
             this.panelMantenimi.TabIndex = 42;
             this.panelMantenimi.Visible = false;
             // 
@@ -624,6 +626,7 @@ namespace Car
             // panelReportes
             // 
             this.panelReportes.BackColor = System.Drawing.Color.PaleGreen;
+            this.panelReportes.Controls.Add(this.btnReportEntregas);
             this.panelReportes.Controls.Add(this.bntListaEmpleados);
             this.panelReportes.Controls.Add(this.btnListContratos);
             this.panelReportes.Controls.Add(this.btnListReservas);
@@ -633,7 +636,7 @@ namespace Car
             this.panelReportes.Location = new System.Drawing.Point(1193, 190);
             this.panelReportes.Margin = new System.Windows.Forms.Padding(4);
             this.panelReportes.Name = "panelReportes";
-            this.panelReportes.Size = new System.Drawing.Size(241, 352);
+            this.panelReportes.Size = new System.Drawing.Size(241, 408);
             this.panelReportes.TabIndex = 43;
             this.panelReportes.Visible = false;
             // 
@@ -872,7 +875,7 @@ namespace Car
             this.btnEntrega.FlatAppearance.BorderSize = 0;
             this.btnEntrega.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEntrega.Location = new System.Drawing.Point(1, 316);
+            this.btnEntrega.Location = new System.Drawing.Point(0, 115);
             this.btnEntrega.Margin = new System.Windows.Forms.Padding(4);
             this.btnEntrega.Name = "btnEntrega";
             this.btnEntrega.Size = new System.Drawing.Size(241, 60);
@@ -887,7 +890,7 @@ namespace Car
             this.btnConsulEntrega.FlatAppearance.BorderSize = 0;
             this.btnConsulEntrega.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsulEntrega.Location = new System.Drawing.Point(954, 556);
+            this.btnConsulEntrega.Location = new System.Drawing.Point(0, 343);
             this.btnConsulEntrega.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsulEntrega.Name = "btnConsulEntrega";
             this.btnConsulEntrega.Size = new System.Drawing.Size(241, 60);
@@ -902,7 +905,7 @@ namespace Car
             this.btnReportEntregas.FlatAppearance.BorderSize = 0;
             this.btnReportEntregas.Font = new System.Drawing.Font("Berlin Sans FB Demi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportEntregas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReportEntregas.Location = new System.Drawing.Point(1193, 556);
+            this.btnReportEntregas.Location = new System.Drawing.Point(0, 343);
             this.btnReportEntregas.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportEntregas.Name = "btnReportEntregas";
             this.btnReportEntregas.Size = new System.Drawing.Size(241, 60);
@@ -917,9 +920,6 @@ namespace Car
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1736, 686);
-            this.Controls.Add(this.btnReportEntregas);
-            this.Controls.Add(this.btnConsulEntrega);
-            this.Controls.Add(this.btnEntrega);
             this.Controls.Add(this.panelTituloAdmin);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.panelAcercaDe);

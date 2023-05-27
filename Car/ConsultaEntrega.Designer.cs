@@ -30,7 +30,7 @@ namespace Car
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaEntrega));
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel2ConsultaEntrega = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.dgEntrega = new System.Windows.Forms.DataGridView();
@@ -41,20 +41,22 @@ namespace Car
             this.lblContrato = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnEliminarEntrega = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
+            this.btnPdfEntrega = new System.Windows.Forms.Button();
+            this.panel2ConsultaEntrega.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgEntrega)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // panel2ConsultaEntrega
             // 
-            this.panel2.Controls.Add(this.btnMinimizar);
-            this.panel2.Controls.Add(this.btnCerrar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1460, 48);
-            this.panel2.TabIndex = 99;
+            this.panel2ConsultaEntrega.Controls.Add(this.btnMinimizar);
+            this.panel2ConsultaEntrega.Controls.Add(this.btnCerrar);
+            this.panel2ConsultaEntrega.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2ConsultaEntrega.Location = new System.Drawing.Point(0, 0);
+            this.panel2ConsultaEntrega.Name = "panel2ConsultaEntrega";
+            this.panel2ConsultaEntrega.Size = new System.Drawing.Size(1460, 48);
+            this.panel2ConsultaEntrega.TabIndex = 99;
+            this.panel2ConsultaEntrega.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel2ConsultaEntrega_MouseMove);
             // 
             // btnMinimizar
             // 
@@ -89,7 +91,7 @@ namespace Car
             this.dgEntrega.Name = "dgEntrega";
             this.dgEntrega.RowHeadersWidth = 51;
             this.dgEntrega.RowTemplate.Height = 24;
-            this.dgEntrega.Size = new System.Drawing.Size(1261, 454);
+            this.dgEntrega.Size = new System.Drawing.Size(1261, 603);
             this.dgEntrega.TabIndex = 91;
             // 
             // lblBuscador
@@ -183,12 +185,30 @@ namespace Car
             this.btnEliminarEntrega.UseVisualStyleBackColor = false;
             this.btnEliminarEntrega.Click += new System.EventHandler(this.btnEliminarEntrega_Click);
             // 
+            // btnPdfEntrega
+            // 
+            this.btnPdfEntrega.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnPdfEntrega.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPdfEntrega.Font = new System.Drawing.Font("Berlin Sans FB Demi", 15.75F, System.Drawing.FontStyle.Bold);
+            this.btnPdfEntrega.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnPdfEntrega.Image = ((System.Drawing.Image)(resources.GetObject("btnPdfEntrega.Image")));
+            this.btnPdfEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPdfEntrega.Location = new System.Drawing.Point(1297, 699);
+            this.btnPdfEntrega.Name = "btnPdfEntrega";
+            this.btnPdfEntrega.Size = new System.Drawing.Size(116, 68);
+            this.btnPdfEntrega.TabIndex = 100;
+            this.btnPdfEntrega.Text = " PDF";
+            this.btnPdfEntrega.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPdfEntrega.UseVisualStyleBackColor = false;
+            this.btnPdfEntrega.Click += new System.EventHandler(this.btnPdfEntrega_Click);
+            // 
             // ConsultaEntrega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1460, 721);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1460, 835);
+            this.Controls.Add(this.btnPdfEntrega);
+            this.Controls.Add(this.panel2ConsultaEntrega);
             this.Controls.Add(this.dgEntrega);
             this.Controls.Add(this.lblBuscador);
             this.Controls.Add(this.btnNuevaEntrega);
@@ -201,7 +221,7 @@ namespace Car
             this.Name = "ConsultaEntrega";
             this.Text = "ConsultaEntrega";
             this.Load += new System.EventHandler(this.ConsultaEntrega_Load);
-            this.panel2.ResumeLayout(false);
+            this.panel2ConsultaEntrega.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgEntrega)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -211,7 +231,7 @@ namespace Car
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel2ConsultaEntrega;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.DataGridView dgEntrega;
@@ -222,5 +242,6 @@ namespace Car
         private System.Windows.Forms.Label lblContrato;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnEliminarEntrega;
+        private System.Windows.Forms.Button btnPdfEntrega;
     }
 }

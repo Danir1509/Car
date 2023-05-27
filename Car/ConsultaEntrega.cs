@@ -1,4 +1,5 @@
 ﻿using Car.Clases;
+using Car.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -136,6 +137,28 @@ namespace Car
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnPdfEntrega_Click(object sender, EventArgs e)
+        {
+            ReporteEntrega report = new ReporteEntrega();
+            report.Show();
+        }
+
+        int posY = 0;
+        int posX = 0;
+        private void panel2ConsultaEntrega_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left)
+            {
+                posX = e.X;
+                posY = e.Y;
+            }
+            else
+            {
+                Left = Left + (e.X - posX);
+                Top = Top + (e.Y - posY);
+            }
         }
     }
 }

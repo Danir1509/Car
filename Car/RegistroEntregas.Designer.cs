@@ -45,7 +45,7 @@ namespace Car
             this.lblContrato = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelRegistroEntrega = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnGuardarEntrega = new System.Windows.Forms.Button();
@@ -61,7 +61,7 @@ namespace Car
             this.txtEntregades = new System.Windows.Forms.TextBox();
             this.txtDevodes = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panelRegistroEntrega.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImgEntrega)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcImagenDevo)).BeginInit();
             this.SuspendLayout();
@@ -216,15 +216,16 @@ namespace Car
             this.pictureBox1.TabIndex = 109;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // panelRegistroEntrega
             // 
-            this.panel2.Controls.Add(this.btnMinimizar);
-            this.panel2.Controls.Add(this.btnCerrar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1220, 59);
-            this.panel2.TabIndex = 135;
+            this.panelRegistroEntrega.Controls.Add(this.btnMinimizar);
+            this.panelRegistroEntrega.Controls.Add(this.btnCerrar);
+            this.panelRegistroEntrega.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelRegistroEntrega.Location = new System.Drawing.Point(0, 0);
+            this.panelRegistroEntrega.Name = "panelRegistroEntrega";
+            this.panelRegistroEntrega.Size = new System.Drawing.Size(1220, 44);
+            this.panelRegistroEntrega.TabIndex = 135;
+            this.panelRegistroEntrega.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelRegistroEntrega_MouseMove);
             // 
             // btnMinimizar
             // 
@@ -234,7 +235,7 @@ namespace Car
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
             this.btnMinimizar.Location = new System.Drawing.Point(1149, 0);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(34, 59);
+            this.btnMinimizar.Size = new System.Drawing.Size(34, 44);
             this.btnMinimizar.TabIndex = 1;
             this.btnMinimizar.UseVisualStyleBackColor = true;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
@@ -247,7 +248,7 @@ namespace Car
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.Location = new System.Drawing.Point(1183, 0);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(37, 59);
+            this.btnCerrar.Size = new System.Drawing.Size(37, 44);
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -394,7 +395,7 @@ namespace Car
             this.Controls.Add(this.dtpFechaDevo);
             this.Controls.Add(this.lbldevolucion);
             this.Controls.Add(this.btnGuardarEntrega);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelRegistroEntrega);
             this.Controls.Add(this.cbVehiculo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblRegistro);
@@ -415,7 +416,7 @@ namespace Car
             this.Text = "RegistroEntregas";
             this.Load += new System.EventHandler(this.RegistroEntregas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.panelRegistroEntrega.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImgEntrega)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcImagenDevo)).EndInit();
             this.ResumeLayout(false);
@@ -440,7 +441,7 @@ namespace Car
         private System.Windows.Forms.Label lblContrato;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelRegistroEntrega;
         private System.Windows.Forms.Button btnMinimizar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnGuardarEntrega;
